@@ -1,0 +1,16 @@
+@import url("bootstrap.min.css");
+@import url("bootstrap-theme.css");
+
+.jumbotron
+{
+	text-align: center;
+	background: url("../images/134 - LQnSFsx.jpg") bottom center no-repeat fixed;
+	background-size: cover;
+}
+
+footer
+{
+	border-top: 1px dashed #CCCCCC;
+	margin: 40px 0px;
+	padding: 20px;
+}
