@@ -1,4 +1,4 @@
-Organizy
+Organizy: Organize Eazy
 ========
 
 An organizing web app.
