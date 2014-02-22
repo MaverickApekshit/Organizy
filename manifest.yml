@@ -1,0 +1,17 @@
+---
+applications:
+  .:
+    name: Organizy
+    framework:
+      name: php
+      info:
+        mem: 128M
+        description: PHP Application
+        exec: 
+    infra: ap-aws
+    url: organizy.ap01.aws.af.cm
+    mem: 128M
+    instances: 1
+    services:
+      organizyDB:
+        type: mysql
