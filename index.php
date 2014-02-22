@@ -34,7 +34,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Organizy</a>
+					<a class="navbar-brand" href="#">Organizy<sub>(Beta)</sub></a>
 				</div>
 
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -55,7 +55,7 @@
     
 		<div class="jumbotron">
 			<h1>Organizy</h1>
-			<p>Organize Eazy</p>
+			<p>Organize Eazy<sub>(Beta)</sub></p>
 			<a class="btn btn-success btn-lg" href="#">Sign in</a>
 			<a class="btn btn-primary btn-lg" href="#features">Learn More</a>
 		</div>
@@ -99,7 +99,7 @@
 
     			<div class="col-md-4">
     				<h3 class="text-right">Organizy</h3>
-    				<p class="text-right">Organize Easy</p>
+    				<p class="text-right">Organize Easy<sub>(Beta)</sub></p>
     			</div>
     		</div>
     	</div>
