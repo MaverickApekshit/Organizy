@@ -9,6 +9,8 @@
 		<!--Display info-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+		<link href="images/64px-Opml-icon.svg.png" rel="shortcut icon">
+
 		<title>Organizy</title>
 
 		<!-- Latest compiled and minified CSS -->
