@@ -60,7 +60,7 @@
 			<h4>Organize Eazy<sub>(Beta)</sub></h4>
 			<p>We help you organize your life.</p>
 			<a class="btn btn-success btn-lg" href="#">Its free, Sign in</a>
-			<a class="btn btn-primary btn-lg" href="#features">Learn More</a>
+			<a class="btn btn-primary btn-lg" href="#features">Learn more</a>
 		</div>
     
      
@@ -80,39 +80,33 @@
 				</div>
 
 			</div>
-		</div>
-	  
-    </div> <!-- /container -->
 
-    <footer>
-    	<div class="container">
-    		<div class="row">
-    			
-    			<div class="col-md-4">
-    				&copy; Apekshit Yadav|| Ankita Dua|| Shubham Bansal<br>2014
-    			</div>
-    			
-    			<div class="col-md-4">
-    				<ul class="nav nav-pills">
-    					<li class="active"><a href="#">Home</a></li>
-    					<li><a href="#features">Features</a></li>
-    					<li><a href="#">About Us</a></li>
-    				</ul>
-    			</div>
+			<div class="col-md-12">
+				<h3 class="text-center">Join now and start organizing, for free!! <a class="btn btn-success btn-lg" href="#">Sign in</a></h3>
+			</div>
+		</div><!-- /container -->
 
-    			<div class="col-md-4">
-    				<h3 class="text-right">Organizy</h3>
-    				<p class="text-right">Organize Easy<sub>(Beta)</sub></p>
+   		<footer>
+    		<div class="container">
+    			<div class="row">
+    			
+    				<div class="col-md-6">
+    					&copy; Apekshit Yadav|| Ankita Dua|| Shubham Bansal<br>2014
+    				</div>
+    			
+    				<div class="col-md-6">
+    					<h3 class="text-right">Organizy</h3>
+    					<p class="text-right">Organize Easy<sub>(Beta)</sub></p>
+    				</div>
     			</div>
     		</div>
-    	</div>
-    </footer>
+   		 </footer>
 
-    <!--jQuery from CDN-->
-    <script src="https://code.jquery.com/jquery.js"></script>
+   		 <!--jQuery from CDN-->
+   		 <script src="https://code.jquery.com/jquery.js"></script>
 
-    <!--JavaSctipt-->
-    <script src="js/bootstrap.min.js"></script>
+   		 <!--JavaSctipt-->
+    	<script src="js/bootstrap.min.js"></script>
 
-  </body>
+  	</body>
 </html>
