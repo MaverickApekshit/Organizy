@@ -57,8 +57,9 @@
     
 		<div class="jumbotron">
 			<h1>Organizy</h1>
-			<p>Organize Eazy<sub>(Beta)</sub></p>
-			<a class="btn btn-success btn-lg" href="#">Sign in</a>
+			<h4>Organize Eazy<sub>(Beta)</sub></h4>
+			<p>We help you organize your life.</p>
+			<a class="btn btn-success btn-lg" href="#">Its free, Sign in</a>
 			<a class="btn btn-primary btn-lg" href="#features">Learn More</a>
 		</div>
     
