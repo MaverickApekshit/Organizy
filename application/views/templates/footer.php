@@ -21,7 +21,5 @@
    		<!--JavaSctipt from CDN-->
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/custom_js.js"></script>
-
     </body>
 </html>

@@ -22,15 +22,10 @@
 					</ul>
 					
 					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<li id="wrap">
+							<a data-toggle="modal" data-target="#myModal">
 								<span class="glyphicon glyphicon-log-in"></span> Sign in
 							</a>
-							<ul class="dropdown-menu">
-								<li><a class="btn btn-success btn-lg" href="#">Login with Gmail</a></li>
-								<li class="divider"></li>
-								<li><a class="btn btn-primary btn-lg" href="#">Login with Facebook</a></li>
-							</ul>
 						</li>
 
 					</ul>
@@ -51,8 +46,8 @@
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
 			<div ="row">
 				<div class="col-sm-6 col-sm-offset-3 text-center screen_center">
-					<a class="btn btn-success btn-lg" href="#">Login with Gmail</a><hr>
-					<a class="btn btn-block btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i>Login with Facebook</a>
+					<a class="btn btn-block btn-social btn-lg btn-google-plus"><i class="fa fa-google-plus"></i> Sign in with Google</a><hr>
+					<a class="btn btn-block btn-social btn-lg btn-facebook"><i class="fa fa-facebook"></i>Sign in with Facebook</a>
 				</div>
 			</div>
 		</div>    
