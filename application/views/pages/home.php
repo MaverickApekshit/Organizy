@@ -22,7 +22,17 @@
 					</ul>
 					
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<span class="glyphicon glyphicon-log-in"></span> Sign in
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="btn btn-success btn-lg" href="#">Login with Gmail</a></li>
+								<li class="divider"></li>
+								<li><a class="btn btn-primary btn-lg" href="#">Login with Facebook</a></li>
+							</ul>
+						</li>
+
 					</ul>
 
 				</div><!-- /.navbar-collapse -->
@@ -30,14 +40,22 @@
 			</div><!-- /.container -->
 		</nav>
     
-		<div class="jumbotron">
+		<div id="wrap" class="jumbotron text-center">
 			<h1>Organizy</h1>
 			<h4>Organize Eazy<sub>(Beta)</sub></h4>
 			<p>We help you organize your life.</p>
-			<a class="btn btn-success btn-lg" href="#">Its free, Sign in</a>
+			<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Its free, Sign in</button>
 			<a class="btn btn-primary btn-lg" href="#features">Learn more</a>
 		</div>
-    
+
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div ="row">
+				<div class="col-sm-6 col-sm-offset-3 text-center screen_center">
+					<a class="btn btn-success btn-lg" href="#">Login with Gmail</a><hr>
+					<a class="btn btn-block btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i>Login with Facebook</a>
+				</div>
+			</div>
+		</div>    
      
 		<div class="container">
 			<div class="row" id="features">
@@ -56,8 +74,9 @@
 
 			</div><!-- /#features -->
 
-			<div class="col-md-12">
-				<h3 class="text-center">Join now and start organizing, for free!! <br><br><a class="btn btn-success btn-lg" href="#">Sign in</a></h3>
+			<div id="wrap" class="col-md-12 text-center">
+				<h3>Join now and start organizing, for free!!</h3>
+				<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Sign in</button>
 			</div>
 
 		</div><!-- /.container -->

@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/OrganizyCI/';
+$config['base_url']	= 'http://organizy.ap01.aws.af.cm/';
 
 /*
 |--------------------------------------------------------------------------
