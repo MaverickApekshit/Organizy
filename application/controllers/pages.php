@@ -1,5 +1,7 @@
 <?php
 
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
 class Pages extends CI_Controller
 {
 
@@ -10,7 +12,8 @@ class Pages extends CI_Controller
 			// Whoops, we don't have a page for that!
 			show_404();
 		}
-
+		$this->load->helper('form');
+		$this->load->library('form_validation');
 		$data['title'] = ucfirst($page); // Capitalize the first letter
 		$this->load->helper('url');
 		$this->load->view('templates/header', $data);
@@ -19,3 +22,4 @@ class Pages extends CI_Controller
 		$this->load->view('templates/end_body_scripts', $data);
 	}
 }
+

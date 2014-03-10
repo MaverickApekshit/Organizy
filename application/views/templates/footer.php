@@ -1,4 +1,4 @@
-<footer>
+<footer id="wrap">
     <div class="container">
     	<div class="row">
     			

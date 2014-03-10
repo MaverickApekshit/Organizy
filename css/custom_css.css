@@ -1,4 +1,4 @@
-@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css); /*for g+ and Facebook icons in login UI*/
 
 body.modal-open #wrap /*background blur in login screen*/
 {
@@ -8,18 +8,14 @@ body.modal-open #wrap /*background blur in login screen*/
     -ms-filter: blur(15px);
     filter: blur(15px);
 }
-  
-.modal-backdrop /*login screen background*/
-{
-	background: #f7f7f7;
-}
 
-.btn
+.btn /*better stacking of buttons in mobile layout*/
 
 {
   margin: 5px;
 }
 
+/*social button effects*/
 .btn-social
 {
   position:relative;
@@ -109,6 +105,11 @@ body.modal-open #wrap /*background blur in login screen*/
 	background-size: cover;
 }
 
+.jumbotron-sm /*contact us jumbotron(smaller)*/
+{
+  padding-bottom: 24px;
+}
+
 .screen_center /*centering the login screen*/
 {
    width: 300px;
@@ -125,7 +126,7 @@ footer
 	border-top: 1px dashed #CCCCCC;
 	margin-top: 40px;
   bottom: 0;
-  background: linear-gradient(rgba(240, 212, 0, 0.45), rgba(0, 0, 0, 0.45)), url(http://images.cdn.fotopedia.com/_avPIZmqM3w-7z161LH_268-hd.jpg);
+  background: linear-gradient(rgba(240, 212, 0, 0.45), rgba(0, 0, 0, 0.45)), url(http://images.cdn.fotopedia.com/_avPIZmqM3w-7z161LH_268-hd.jpg); /*image and shading in footer*/
 }
 
 .footertext

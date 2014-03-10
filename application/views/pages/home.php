@@ -1,7 +1,7 @@
 <body>
 
 	<!--navigation bar-->
-	<nav class="navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
+	<nav id="wrap" class="navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 				
 			<div class="navbar-header">
@@ -11,19 +11,19 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Organizy<sub>(Beta)</sub></a>
+				<a class="navbar-brand" href="<?php echo base_url(); ?>">Organizy<sub>(Beta)</sub></a>
 			</div>
 
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-					<li><a href="#features"><span class="glyphicon glyphicon-star"></span> Features</a></li>
+					<li class="active"><a href="<?php echo base_url(); ?>"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+					<li><a href="<?php echo base_url(); ?>#features"><span class="glyphicon glyphicon-star"></span> Features</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About Us</a></li>
 					<li><a href="<?php echo base_url(); ?>index.php/contact_us"><span class="glyphicon glyphicon-comment"></span> Contact Us</a></li>
 				</ul>
 					
 				<ul class="nav navbar-nav navbar-right">
-					<li id="wrap">
+					<li>
 						<a data-toggle="modal" data-target="#myModal">
 							<span class="glyphicon glyphicon-log-in"></span> Sign in
 						</a>
@@ -54,7 +54,7 @@
 		</div>
 	</div>    
      
-	<div class="container">
+	<div class="container" id="wrap">
 		<div class="row" id="features">
 				
 			<div class="col-md-6">
@@ -71,7 +71,7 @@
 
 		</div><!-- /#features -->
 
-		<div id="wrap" class="col-md-12 text-center">
+		<div class="text-center">
 			<h3>Join now and start organizing, for free!!</h3>
 			<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Sign in</button>
 		</div>

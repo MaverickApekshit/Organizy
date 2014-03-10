@@ -1,7 +1,7 @@
 <body>
 
 	<!--navigation bar-->
-	<nav class="navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
+	<nav id="wrap" class="navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 				
 			<div class="navbar-header">
@@ -11,13 +11,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Organizy<sub>(Beta)</sub></a>
+				<a class="navbar-brand" href="<?php echo base_url(); ?>">Organizy<sub>(Beta)</sub></a>
 			</div>
 
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="<?php echo base_url(); ?>"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-					<li><a href="#features"><span class="glyphicon glyphicon-star"></span> Features</a></li>
+					<li><a href="<?php echo base_url(); ?>#features"><span class="glyphicon glyphicon-star"></span> Features</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About Us</a></li>
 					<li class="active"><a href="#"><span class="glyphicon glyphicon-comment"></span> Contact Us</a></li>
 				</ul>
@@ -36,36 +36,50 @@
 		</div><!-- /.container -->
 	</nav>
 
-	<div class="jumbotron jumbotron-sm">
+	<!--Login UI-->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div ="row">
+			<div class="col-sm-6 col-sm-offset-3 text-center screen_center">
+				<a class="btn btn-block btn-social btn-lg btn-google-plus"><i class="fa fa-google-plus"></i> Sign in with Google</a><hr>
+				<a class="btn btn-block btn-social btn-lg btn-facebook"><i class="fa fa-facebook"></i>Sign in with Facebook</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrap" class="jumbotron jumbotron-sm">
 		<div class="container">
 			<h1>Contact us</h1>
 			<h4>Feel free to contact us</h4>
 		</div>
 	</div>
 
-	<div class="container">
+	<div id="wrap" class="container">
 		<div class="well well-sm">
-			<form>
+
+			<?php echo validation_errors(); ?>
+
+			<?php echo form_open('contact_us_controller') ?>
+			<!--form method="post" action="<?php echo base_url(); ?>index.php/contact_us_controller/"-->
 				<div class="row">
 				
 					<div class="col-md-6">
 					
 						<div class="form-group">
 							<label for="name">Name</label>
-							<input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+							<input name="name" type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
 						</div>
 
 						<div class="form-group">
 							<label for="email">Email Address</label>
 							<div class="input-group">
 								<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-								<input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+								<input name="email" type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label for="subject">Subject</label>
-							<input type="subject" class="form-control" id="subject" placeholder="Subject" required="required" />
+							<input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="required" />
 						</div>
 
 					</div>
@@ -73,14 +87,14 @@
 					<div class="col-md-6">
 						<div class="form-group">
 							<label for="name">Message</label>
-							<textarea name="message" id="message" class="form-control" rows="9" cols="25" require="required" placeholder="Message"></textarea>
+							<textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
 						</div>
 					</div>
 
 					<div class="col-md-12">
 						<button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Send Message</button>
 					</div>
-				</div>
+				</div> <!--/.row-->
 			</form>
-		</div>
-	</div>
+		</div> <!--/.well-->
+	</div> <!--/.container-->

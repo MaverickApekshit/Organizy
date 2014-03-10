@@ -38,11 +38,11 @@
 |
 */
 
-//$route['default_controller'] = "welcome";
-//$route['404_override'] = '';
-
 $route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
+$route['contact_us_controller'] = 'contact_us_controller/validator/';
+
+/*$route['404_override'] = '';*/
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
