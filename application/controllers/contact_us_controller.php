@@ -6,9 +6,9 @@ class Contact_us_controller extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('contact_us_model');
-		$this->load->helper('form');
-		$this->load->library('form_validation');
+		$this->load->model('mailer_model'); //load modal
+		$this->load->helper('form'); //library for dealing with forms
+		$this->load->library('form_validation'); //library for dealing with form validation
 	}
 
 	public function validator()
@@ -29,7 +29,7 @@ class Contact_us_controller extends CI_Controller
 		else
 		{
 							
-			$this->contact_us_model->form_mailer();
+			$this->mailer_model->form_mailer();
 		}
 	}
 }
