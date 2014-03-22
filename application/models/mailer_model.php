@@ -25,6 +25,9 @@ class Mailer_model extends CI_Model
 		$this->email->subject($email_subject);
 		$this->email->message($email_message);
 		$this->email->send();
-		echo $this->email->print_debugger();
+		
+		//echo $this->email->print_debugger();
+
+		return "true";
 	} 
 }

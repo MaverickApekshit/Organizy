@@ -41,6 +41,7 @@
 $route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
 $route['contact_us_controller'] = 'contact_us_controller/validator/';
+$route['login_controller'] = 'login_controller/index/';
 
 /*$route['404_override'] = '';*/
 

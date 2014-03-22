@@ -1,9 +1,9 @@
-<footer id="wrap">
+<footer>
     <div class="container">
     	<div class="row">
     			
     		<div class="col-md-6">
-    			<p class="footertext">&copy; Apekshit Yadav|| Ankita Dua<br>2014</p>
+    			<p class="footertext">&copy; Apekshit Yadav|| Ankita Dua<br />2014</p>
     		</div>
     			
     		<div class="col-md-6">

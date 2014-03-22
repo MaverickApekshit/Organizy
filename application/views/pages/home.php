@@ -1,7 +1,7 @@
 <body>
 
 	<!--navigation bar-->
-	<nav id="wrap" class="navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
+	<nav class="navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 				
 			<div class="navbar-header">
@@ -24,9 +24,7 @@
 					
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a data-toggle="modal" data-target="#myModal">
-							<span class="glyphicon glyphicon-log-in"></span> Sign in
-						</a>
+						<a id="sign_in" href="<?php echo base_url(); ?>index.php/login_controller/"><i class="fa fa-google-plus"></i> | Sign in with Google</a>
 					</li>
 
 				</ul>
@@ -36,25 +34,15 @@
 		</div><!-- /.container -->
 	</nav>
 
-	<div id="wrap" class="jumbotron text-center">
+	<div class="jumbotron text-center">
 		<h1>Organizy</h1>
 		<h4>Organize Eazy<sub>(Beta)</sub></h4>
 		<p>We help you organize your life.</p>
-		<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Its free, Sign in</button>
-		<a class="btn btn-primary btn-lg" href="#features">Learn more</a>
+		<a class="btn btn-lg btn-danger" href="<?php echo base_url(); ?>index.php/login_controller/"><i class="fa fa-google-plus"></i> | Sign in with Google</a>
 	</div>
-
-	<!--Login UI-->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-		<div ="row">
-			<div class="col-sm-6 col-sm-offset-3 text-center screen_center">
-				<a class="btn btn-block btn-social btn-lg btn-google-plus"><i class="fa fa-google-plus"></i> Sign in with Google</a><hr>
-				<a class="btn btn-block btn-social btn-lg btn-facebook"><i class="fa fa-facebook"></i>Sign in with Facebook</a>
-			</div>
-		</div>
-	</div>    
      
-	<div class="container" id="wrap">
+     <!--content-->
+	<div class="container">
 		<div class="row" id="features">
 				
 			<div class="col-md-6">
@@ -73,7 +61,7 @@
 
 		<div class="text-center">
 			<h3>Join now and start organizing, for free!!</h3>
-			<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Sign in</button>
+			<a class="btn btn-lg btn-danger" href="<?php echo base_url(); ?>index.php/login_controller/"><i class="fa fa-google-plus"></i> | Sign in with Google</a>
 		</div>
 
 	</div><!-- /.container -->

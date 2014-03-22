@@ -1,7 +1,7 @@
 <body>
 
 	<!--navigation bar-->
-	<nav id="wrap" class="navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
+	<nav class="navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 				
 			<div class="navbar-header">
@@ -23,10 +23,8 @@
 				</ul>
 					
 				<ul class="nav navbar-nav navbar-right">
-					<li id="wrap">
-						<a data-toggle="modal" data-target="#myModal">
-							<span class="glyphicon glyphicon-log-in"></span> Sign in
-						</a>
+					<li>
+						<a id="sign_in" href="#"><i class="fa fa-google-plus"></i> | Sign in with Google</a>
 					</li>
 
 				</ul>
@@ -36,27 +34,18 @@
 		</div><!-- /.container -->
 	</nav>
 
-	<!--Login UI-->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-		<div ="row">
-			<div class="col-sm-6 col-sm-offset-3 text-center screen_center">
-				<a class="btn btn-block btn-social btn-lg btn-google-plus"><i class="fa fa-google-plus"></i> Sign in with Google</a><hr>
-				<a class="btn btn-block btn-social btn-lg btn-facebook"><i class="fa fa-facebook"></i>Sign in with Facebook</a>
-			</div>
-		</div>
-	</div>
-
-	<div id="wrap" class="jumbotron jumbotron-sm">
+	<div class="jumbotron jumbotron-sm">
 		<div class="container">
 			<h1>Contact us</h1>
 			<h4>Feel free to contact us</h4>
 		</div>
 	</div>
 
-	<div id="wrap" class="container">
+	<!--contact us form-->
+	<div class="container">
 		<div class="well well-sm">
 
-			<?php echo validation_errors(); ?>
+			<?php echo validation_errors(); ?><!--display validation errors-->
 
 			<?php echo form_open('contact_us_controller') ?>
 			<!--form method="post" action="<?php echo base_url(); ?>index.php/contact_us_controller/"-->

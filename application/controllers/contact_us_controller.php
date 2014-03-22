@@ -13,12 +13,14 @@ class Contact_us_controller extends CI_Controller
 
 	public function validator()
 	{
+		//form validation
 		$this->form_validation->set_rules('name','Name','required');
 		$this->form_validation->set_rules('email','Email','required');
 		$this->form_validation->set_rules('subject','Subject','required');
 		$this->form_validation->set_rules('message','Message','required');
 		if($this->form_validation->run()===FALSE)
 		{
+			//if not validated display form
 			$data['title'] = ucfirst('contact_us'); // Capitalize the first letter
 			$this->load->helper('url');
 			$this->load->view('templates/header', $data);
@@ -27,9 +29,19 @@ class Contact_us_controller extends CI_Controller
 			$this->load->view('templates/end_body_scripts', $data);
 		}
 		else
-		{
-							
-			$this->mailer_model->form_mailer();
+		{				
+			$success = $this->mailer_model->form_mailer();
+
+			if($success == true)
+			{
+				$data['title'] = ucfirst('contact_us'); // Capitalize the first letter
+				$this->load->helper('url');
+				$this->load->view('templates/header', $data);
+				$this->load->view('pages/contact_us', $data);
+				$this->load->view('templates/success_message', $data);
+				$this->load->view('templates/footer', $data);
+				$this->load->view('templates/end_body_scripts', $data);
+			}
 		}
 	}
 }
